@@ -261,11 +261,134 @@ footer p{font-size:0.7rem;color:rgba(201,185,154,0.3);letter-spacing:0.08em;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 .rd1{transition-delay:0.1s;}.rd2{transition-delay:0.2s;}.rd3{transition-delay:0.3s;}
 
+/* ... todo o CSS anterior ... */
+
 @media(max-width:768px){
+  /* NAV */
   nav{padding:1rem 1.5rem;}
-  .about-grid,.diff-grid{grid-template-columns:1fr;}
+
+  /* HERO - ajuste de padding e centralização */
+  .hero{
+    padding:7rem 1.2rem 4rem;
+    min-height:100vh;
+    justify-content:center;
+  }
+
+  /* Câmera de fundo - empurrada mais para fora e reduzida */
+  .cam-bg-deco{
+    right:-160px;
+    bottom:-80px;
+    width:340px;
+    height:auto;
+    opacity:0.03;
+  }
+
+  /* Conteúdo do hero - largura total */
+  .hero-content{max-width:100%;}
+
+  /* Título - ajuste de proporção em telas pequenas */
+  .hero-title{
+    font-size:clamp(3.4rem,11vw,5.5rem);
+    letter-spacing:0.14em;
+    line-height:0.92;
+  }
+
+  .hero-sub{
+    font-size:0.82rem;
+    letter-spacing:0.32em;
+    margin-top:0.5rem;
+  }
+
+  .hero-badge{
+    font-size:0.58rem;
+    letter-spacing:0.22em;
+    padding:0.4rem 1rem;
+    margin-bottom:1.5rem;
+    gap:0.5rem;
+  }
+
+  /* Tagline - espaçamento interno */
+  .hero-tagline{
+    font-size:0.85rem;
+    line-height:1.85;
+    padding:0 0.3rem;
+  }
+
+  /* Botões empilhados e centralizados */
+  .cta-group{
+    flex-direction:column;
+    align-items:center;
+    gap:0.9rem;
+    margin-top:2.2rem;
+  }
+  .btn-wpp,
+  .btn-ghost{
+    width:100%;
+    max-width:320px;
+    justify-content:center;
+    text-align:center;
+  }
+
+  /* Scroll hint mais próximo */
+  .scroll-hint{bottom:1.8rem;}
+
+  /* Filmstrip menor */
+  .filmstrip{height:18px;}
+  .fs-dot{width:7px;height:7px;margin:0 5px;}
+
+  /* Luz do hero ajustada */
+  .hero-light{width:20px;left:-5%;}
+
+  /* SEÇÕES - menos padding vertical */
+  .section{padding:4.5rem 1.3rem;}
+  .section-title{font-size:clamp(1.8rem,5.5vw,2.8rem);margin-bottom:1rem;}
+
+  /* ABOUT */
+  .about-grid{
+    grid-template-columns:1fr;
+    gap:2rem;
+    margin-top:2.5rem;
+  }
   .about-cam{display:none;}
-  .diff-item{border-right:none;border-bottom:1px solid rgba(197,165,90,0.1);}
+  .about-text p{font-size:0.9rem;line-height:1.9;}
+
+  /* SERVIÇOS - empilha cards */
+  .services-grid{grid-template-columns:1fr;margin-top:2.5rem;}
+  .service-card{padding:2.2rem 1.6rem;}
+  .svc-num{font-size:2.2rem;margin-bottom:0.8rem;}
+  .svc-name{font-size:1.35rem;}
+
+  /* DIFERENCIAIS - empilha itens */
+  .diff-grid{grid-template-columns:1fr;margin-top:2.5rem;}
+  .diff-item{
+    border-right:none;
+    border-bottom:1px solid rgba(197,165,90,0.1);
+    padding:2.2rem 1.6rem;
+  }
+  .diff-deco{
+    right:-120px;
+    width:260px;
+    height:auto;
+    opacity:0.025;
+  }
+
+  /* QUOTE */
+  .quote-sec{padding:4.5rem 1.3rem;}
+  .quote-mark{font-size:8rem;}
+  .quote-text{font-size:1.2rem;line-height:1.65;padding:0 0.3rem;}
+  .mic-bg{left:-20px;width:70px;height:auto;opacity:0.03;}
+  .bobina-bg{right:-30px;width:120px;height:auto;opacity:0.03;}
+
+  /* CTA FINAL */
+  .cta-sec{padding:5rem 1.3rem;}
+  .cta-title{font-size:clamp(1.8rem,5.5vw,2.6rem);}
+  .cta-sub{font-size:0.85rem;max-width:100%;padding:0 0.3rem;margin-bottom:2.2rem;}
+  .btn-wpp-big{width:100%;max-width:340px;justify-content:center;}
+  .wpp-pulse{width:56px;height:56px;margin-bottom:1.5rem;}
+
+  /* FOOTER */
+  footer{padding:2.5rem 1.3rem;}
+  .footer-logo{font-size:1.7rem;letter-spacing:0.35em;}
 }
 </style>
 </head>
